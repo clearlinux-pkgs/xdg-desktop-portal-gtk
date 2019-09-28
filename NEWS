@@ -1,3 +1,33 @@
+Changes in 1.4.0
+================
+
+* Translation updates
+* inhibit: Implement session state tracking
+* screencast: Allow selecting source types
+* screencast: Support cursor modes
+* Add a background & autostart portal
+
+Changes in 1.2.0
+================
+
+* Translation updates
+* file chooser: Support setting current filter
+
+Changes in 1.1.1
+================
+
+* lockdown: Implement the lockdown backend
+* email: Be more careful when selecting a handler
+* Translation updates
+
+Changes in 1.1.0
+================
+
+* Respect GNOME lockdown settings for printing, save-to-disk and app choosing
+* filechooser: Set proper default accept label
+* appchooser: Implement UpdateChoices and update the dialog
+* Translation updates
+
 Major changes in 1.0.2
 ======================
 
