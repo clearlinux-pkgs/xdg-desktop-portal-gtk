@@ -1,3 +1,36 @@
+Changes in 1.6.0
+================
+
+- Translation updates
+
+Changes in 1.5.2
+================
+
+- email: Work with sandboxed email clients
+- wallpaper: Support http: uris
+- wallpaper: Improve preview
+- appchooser: Modernize the appearance
+- background: Improve application monitoring
+- Require xdg-desktop-portal 1.5
+
+Changes in 1.5.1
+================
+
+* settings: Get animations-enabled setting from gnome-shell
+* wallpaper: Add a portal backend for setting desktop backgrounds
+* email: Support multiple addresses, cc and bcc
+* filechooser: Support saving multiple files
+* Translation updates
+
+Changes in 1.5.0
+================
+
+* screencast: Support window selection
+* screencast: Fix a crash
+* settings: Add a settings portal backend
+* settings: Handle enable-animations setting like gsd
+* Translation updates
+
 Changes in 1.4.0
 ================
 
