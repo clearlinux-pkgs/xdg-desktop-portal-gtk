@@ -4,7 +4,7 @@
 #
 Name     : xdg-desktop-portal-gtk
 Version  : 1.6.0
-Release  : 7
+Release  : 8
 URL      : https://github.com/flatpak/xdg-desktop-portal-gtk/releases/download/1.6.0/xdg-desktop-portal-gtk-1.6.0.tar.xz
 Source0  : https://github.com/flatpak/xdg-desktop-portal-gtk/releases/download/1.6.0/xdg-desktop-portal-gtk-1.6.0.tar.xz
 Summary  : No detailed summary available
@@ -15,8 +15,8 @@ Requires: xdg-desktop-portal-gtk-libexec = %{version}-%{release}
 Requires: xdg-desktop-portal-gtk-license = %{version}-%{release}
 Requires: xdg-desktop-portal-gtk-locales = %{version}-%{release}
 Requires: xdg-desktop-portal-gtk-services = %{version}-%{release}
+Requires: xdg-desktop-portal
 BuildRequires : gettext
-BuildRequires : gtk+-dev
 BuildRequires : perl(XML::Parser)
 BuildRequires : pkgconfig(fontconfig)
 BuildRequires : pkgconfig(gio-unix-2.0)
@@ -28,6 +28,7 @@ BuildRequires : pkgconfig(gtk+-wayland-3.0)
 BuildRequires : pkgconfig(gtk+-x11-3.0)
 BuildRequires : pkgconfig(xdg-desktop-portal)
 BuildRequires : sed
+BuildRequires : xdg-desktop-portal
 
 %description
 No detailed description available
@@ -82,14 +83,14 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1579198788
+export SOURCE_DATE_EPOCH=1586294671
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
 export NM=gcc-nm
 export CFLAGS="$CFLAGS -O3 -ffat-lto-objects -flto=4 "
-export FCFLAGS="$CFLAGS -O3 -ffat-lto-objects -flto=4 "
-export FFLAGS="$CFLAGS -O3 -ffat-lto-objects -flto=4 "
+export FCFLAGS="$FFLAGS -O3 -ffat-lto-objects -flto=4 "
+export FFLAGS="$FFLAGS -O3 -ffat-lto-objects -flto=4 "
 export CXXFLAGS="$CXXFLAGS -O3 -ffat-lto-objects -flto=4 "
 %configure --disable-static
 make  %{?_smp_mflags}
@@ -102,7 +103,7 @@ export no_proxy=localhost,127.0.0.1,0.0.0.0
 make VERBOSE=1 V=1 %{?_smp_mflags} check
 
 %install
-export SOURCE_DATE_EPOCH=1579198788
+export SOURCE_DATE_EPOCH=1586294671
 rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/package-licenses/xdg-desktop-portal-gtk
 cp %{_builddir}/xdg-desktop-portal-gtk-1.6.0/COPYING %{buildroot}/usr/share/package-licenses/xdg-desktop-portal-gtk/01a6b4bf79aca9b556822601186afab86e8c4fbf
