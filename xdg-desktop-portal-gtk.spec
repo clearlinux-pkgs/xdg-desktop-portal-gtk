@@ -4,7 +4,7 @@
 #
 Name     : xdg-desktop-portal-gtk
 Version  : 1.6.0
-Release  : 7
+Release  : 9
 URL      : https://github.com/flatpak/xdg-desktop-portal-gtk/releases/download/1.6.0/xdg-desktop-portal-gtk-1.6.0.tar.xz
 Source0  : https://github.com/flatpak/xdg-desktop-portal-gtk/releases/download/1.6.0/xdg-desktop-portal-gtk-1.6.0.tar.xz
 Summary  : No detailed summary available
