@@ -1,0 +1,7 @@
+1.15.1
+glib-dev
+gnome-desktop-dev
+pkgconfig(glib-2.0)
+pkgconfig(gnome-desktop-3.0)
+pkgconfig(gtk+-3.0)
+pypi(packaging)
